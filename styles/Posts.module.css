@@ -1,4 +1,5 @@
 .blogPosts{
+
     min-height: 100vh;
     flex: 1;
     display: flex;
@@ -7,4 +8,20 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 3rem;
+}
+
+.post{
+    margin-top: 20px;
+}
+
+.postLink {
+    text-decoration: none;
+    color: inherit; /* Ensures the link inherits the color of the parent element */
+}
+
+.postLink h3 {
+    margin: 0;
+    padding: 0;
+    color: black; /* Customize as needed */
+    font-weight: bold; /* Customize as needed */
 }
