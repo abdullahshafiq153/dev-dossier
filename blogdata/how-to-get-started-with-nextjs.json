@@ -1,0 +1,6 @@
+{
+    "title": "How to Get Started with Next.js",
+    "content": "Next.js is a popular React framework that simplifies building server-rendered applications. Begin by installing Next.js using `npx create-next-app`. Explore the folder structure and understand the conventions of Next.js. Learn about static site generation (SSG) and server-side rendering (SSR) for better performance. Create and style your pages using built-in components. Familiarize yourself with API routes for backend functionality. Integrate external data sources and APIs into your application. Utilize the Next.js image optimization and automatic code splitting features. Deploy your Next.js application to platforms like Vercel. Continuously explore advanced features and best practices for optimizing your application.",
+    "author": "Alice Johnson"
+  }
+  
