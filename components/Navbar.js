@@ -14,7 +14,7 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link href="/Posts" legacyBehavior>
+            <Link href="/BlogPosts" legacyBehavior>
               <a>Posts</a>
             </Link>
           </li>
