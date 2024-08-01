@@ -6,13 +6,19 @@ import { useEffect } from "react";
 import * as fs from "fs";
 
 const Slug = (props) => {
+  function createMarkup(c) {
+    return {__html: c};
+  }
+  
+
+
   const [blog, setblog] = useState(props.blogPost);
 
   return (
     <div className={Styles.main}>
       <h1>{blog && blog.title}</h1>
       <hr />
-      <div>{blog && blog.content}</div>
+      {blog && <div dangerouslySetInnerHTML={createMarkup(blog.content)}></div>}
     </div>
   );
 };

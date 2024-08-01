@@ -2,6 +2,7 @@
     "title": "How to Learn React",
     "content": "Learning React involves understanding the core concepts of the library. Start with the official React documentation to grasp fundamental ideas. Follow a structured course or tutorial for hands-on practice. Build small projects to apply your knowledge and solve real problems. Utilize resources like online forums and community groups for support. Experiment with React hooks and context API for state management. Explore popular tools and libraries that complement React, such as Redux and React Router. Study advanced topics like performance optimization and testing. Continuously build and refine your projects to solidify your skills. Keep learning and stay updated with the latest React updates.",
     "author": "Jane Smith",
-    "slug":"how-to-learn-react"
+    "slug":"how-to-learn-react",
+    "metadesc":"Learning React involves understanding the core concepts of the library. Start with the official React..."
   }
   

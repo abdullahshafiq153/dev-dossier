@@ -26,7 +26,7 @@ const BlogPosts = (props) => {
                 <h3>{blogitem.title}</h3>
               </a>
             </Link>
-            <p>{blogitem.content.substr(0, 140)}.....</p>
+            <p>{blogitem.metadesc}</p>
           </div>
         );
       })}
