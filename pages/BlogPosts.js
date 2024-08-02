@@ -6,7 +6,7 @@ import * as fs from "fs";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 const BlogPosts = (props) => {
-  console.log(props);
+  // console.log(props);
   const [blogs, setblogs] = useState(props.allBlogs);
   const [count, setcount] = useState(2);
   // useEffect(() => {

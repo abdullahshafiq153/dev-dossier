@@ -40,18 +40,36 @@
 }
 
 /* Responsive design adjustments */
+@media (max-width: 800px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar ul {
+   
+    align-items: center;
+    gap: 15px;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
 @media (max-width: 400px) {
   .navbar {
     padding: 10px;
   }
 
   .navbar ul {
-    flex-direction: column;
+    
+    align-items: center;
     gap: 10px;
   }
 
   .navbar a {
-    font-size: 0.9rem;
-    padding: 10px;
+    font-size: 0.8rem;
+    padding: 8px;
   }
 }
