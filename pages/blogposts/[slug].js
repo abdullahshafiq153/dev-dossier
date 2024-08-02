@@ -29,12 +29,12 @@ const Slug = (props) => {
 
 //static site generation
 export async function getStaticPaths() {
+  let allB = await fs.promises.readdir(`blogdata`);
+  allB = allB.map((item) => {
+    return { params: { slug: item.split(".")[0]} }
+  });
   return {
-    paths: [
-      { params: { slug: "how-to-get-started-with-nextjs" } },
-      { params: { slug: "how-to-learn-react" } },
-      { params: { slug: "web-development-2024-roadmap" } },
-    ],
+    paths: allB,
 
     fallback: true, // false or "blocking"
   };
