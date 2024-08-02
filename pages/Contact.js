@@ -2,8 +2,6 @@ import React from "react";
 import Styles from "../styles/Contact.module.css";
 import { useState } from "react";
 
-
-
 const Contact = () => {
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
@@ -12,7 +10,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, msg);
-    const data = {name, email, msg};
+    const data = { name, email, msg };
     fetch("http://localhost:3000/api/postcontact/", {
       method: "POST",
       headers: {
@@ -20,20 +18,19 @@ const Contact = () => {
       },
       body: JSON.stringify(data),
     })
-    .then(response => response.json())
-    .then(data=>{
-      console.log('Success:',data);
-      // console.log('before alert');
-      alert("Thanks for contacting us.")
-      // console.log('after alert');
-      setname('')
-      setmsg('')
-      setemail('')
-      
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data);
+        // console.log('before alert');
+        alert("Thanks for contacting us.");
+        // console.log('after alert');
+        setname("");
+        setmsg("");
+        setemail("");
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   };
 
   const handleChange = (e) => {

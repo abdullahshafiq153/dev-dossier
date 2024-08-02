@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Styles from "../styles/Home.module.css";
+import Styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
   return (

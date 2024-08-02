@@ -1,27 +1,74 @@
-.blogPosts{
-
-    min-height: 100vh;
-    flex: 1;
+/* Blog posts section styling */
+.blogPosts {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 3rem;
-}
-
-.post{
-    margin-top: 20px;
-}
-
-.postLink {
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto; /* Center the blog posts */
+    padding: 20px;
+  }
+  
+  /* Individual blog post styling */
+  .post {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transform transition */
+  }
+  
+  /* Hover effect for blog post */
+  .post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Post link styling */
+  .postLink {
     text-decoration: none;
-    color: inherit; /* Ensures the link inherits the color of the parent element */
-}
-
-.postLink h3 {
-    margin: 0;
-    padding: 0;
-    color: black; /* Customize as needed */
-    font-weight: bold; /* Customize as needed */
-}
+    color: #0070f3;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .postLink:hover {
+    color: #005bb5;
+  }
+  
+  /* Post title styling */
+  .post h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Post description styling */
+  .post p {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  /* Read More Button Styling */
+.readMoreButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #587fac; /* Blue background color */
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .readMoreButton:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarges the button */
+  }
+  
+  .readMoreButton:focus {
+    outline: 2px solid #005bb5; /* Outline on focus for accessibility */
+    outline-offset: 2px;
+  }
+  
