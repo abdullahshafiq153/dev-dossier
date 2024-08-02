@@ -24,7 +24,7 @@ const About = () => {
         <div className={Styles.section}>
           <h2 className={Styles.title}>What We Offer</h2>
           <p className={Styles.text}>
-            On Dev. Dossier, you'll find a range of resources including in-depth tutorials, practical tips, and insights into various programming languages and technologies. Whether you're just starting out or you're a seasoned pro, we have content that will help you grow and succeed.
+            On Dev. Dossier, you&apos;ll find a range of resources including in-depth tutorials, practical tips, and insights into various programming languages and technologies. Whether you&apos;re just starting out or you&apos;re a seasoned pro, we have content that will help you grow and succeed.
           </p>
         </div>
         <div className={Styles.section}>
